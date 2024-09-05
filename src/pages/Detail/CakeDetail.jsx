@@ -1,8 +1,8 @@
 import React from "react";
 import { Navigate, useParams } from "react-router-dom";
-import Layout from "../components/Layout";
+import Layout from "../../components/Layout";
 
-const ProductDetail = ({ cake }) => {
+const CakeDetail = ({ cake }) => {
   const { id } = useParams();
   const item = cake.find((item) => item.id === parseInt(id));
 
@@ -14,9 +14,9 @@ const ProductDetail = ({ cake }) => {
     <Layout>
       <section className="container mx-auto mt-24">
         <div className="flex flex-wrap justify-evenly items-center">
-      <div className="img">
+        <div className="img">
             <img src={item.url} alt="" />
-    </div>
+      </div>
         <div className="flex flex-col">
           <h1 className="text-xl ">รายละเอียดสินค้า</h1>
           <h1 className="text-4xl font-bold text-center sm:text-left">{item.name}</h1>
@@ -48,4 +48,4 @@ const ProductDetail = ({ cake }) => {
   );
 };
 
-export default ProductDetail;
+export default CakeDetail;

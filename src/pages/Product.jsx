@@ -79,7 +79,7 @@ const Product = ({ cake,cookie,croissant}) => {
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
                 <h1 className="font-bold">{item.price} บาท</h1>
-                <NavLink to={`/detail/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
+                <NavLink to={`/cake/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
               </div>
             ))}
           </div>
@@ -99,7 +99,7 @@ const Product = ({ cake,cookie,croissant}) => {
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
                 <h1 className="font-bold">{item.price} บาท</h1>
-                <button className="bg-primary w-full py-2 mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</button>
+                <NavLink to={`/cookie/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
               </div>
             ))}
           </div>
@@ -120,7 +120,7 @@ const Product = ({ cake,cookie,croissant}) => {
                 <img  className="w-72 rounded-full" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
                 <h1 className="font-bold">{item.price} บาท</h1>
-                <button className="bg-primary w-full py-2 mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</button>
+                <NavLink to={`/croissant/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
               </div>
             ))}
           </div>
