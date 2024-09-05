@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import SignIn from "./pages/SignIn";
 import Home from "./pages/Home";
 import Product from "./pages/Product";
 import About from "./pages/About";
@@ -9,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import CookieDetail from "./pages/Detail/CookieDetail";
 import CakeDetail from "./pages/Detail/CakeDetail";
 import CroissantDetail from "./pages/Detail/CroissantDetail";
+
 
 
 function App() {
@@ -145,6 +147,7 @@ const [cookie] = useState([
           <Route path="/product" element={<Product cake={cake} cookie={cookie} croissant={croissant} />} />
           <Route path="/about" element={<About/>} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/signin" element={<SignIn/>} />
           <Route path="/cake/:id" element={<CakeDetail cake={cake} />} />
           <Route path="/cookie/:id" element={<CookieDetail cookie={cookie} />} />
           <Route path="/croissant/:id" element={<CroissantDetail croissaint={croissant} />} />

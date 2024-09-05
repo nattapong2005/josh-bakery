@@ -50,7 +50,11 @@ const SignIn = () => {
             </form>
           </div>
         </div>
-        <div className="hidden md:block md:w-1/2 bg-red-600"></div>
+        <div className="hidden md:block md:w-1/2 bg-red-800">
+        <div className="flex items-center justify-center min-h-screen">
+        <img className='w-1/2' src="https://static.vecteezy.com/system/resources/previews/045/931/744/original/strawberry-cake-3d-decoration-free-png.png" alt="" />
+        </div>
+        </div>
       </div>
     </div>
   );
