@@ -15,7 +15,7 @@ const SignIn = () => {
                 </label>
                 <input
                   type="text"
-                  className=" block w-full py-2 px-4 border-b-2 rounded-md focus:outline-none"
+                  className=" block w-full py-2 px-4 border-red-700  border-b-2 rounded-md focus:outline-none"
                   placeholder="Username"
                   name="username"
                   required
@@ -27,7 +27,7 @@ const SignIn = () => {
                 </label>
                 <input
                   type="password"
-                  className=" block w-full py-2 px-4 border-b-2 rounded-md focus:outline-none"
+                  className=" block w-full py-2 px-4 border-red-700 border-b-2 rounded-md focus:outline-none"
                   placeholder="Password"
                   name="password"
                   required
@@ -35,14 +35,14 @@ const SignIn = () => {
               </div>
               <div className="text-center mt-4">
                 <button
-                  className="btn bg-primary hover:bg-secondary py-2 px-4 w-full rounded-xl shadow-lg text-lg flex items-center justify-center"
+                  className="btn bg-primary hover:bg-secondary py-2 px-4 w-full rounded-full shadow-xl text-lg flex items-center justify-center"
                   name="login"
                   type="submit"
                 >
                   <i className="fas fa-sign-in-alt mr-2"></i> เข้าสู่ระบบ
                 </button>
               </div>
-              <div className="text-center mt-3">
+              <div className="text-center mt-5">
                 <button className="text-red-800 r">
                   หากคุณยังไม่มีบัญชี คลิกที่นี่
                 </button>

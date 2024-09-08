@@ -78,7 +78,7 @@ const Product = ({ cake,cookie,croissant}) => {
               <div className="max-w-sm shadow-lg p-5 ">
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
-                <h1 className="font-bold">{item.price} บาท</h1>
+                <h1 className="font-bold text-xl">{item.price} บาท</h1>
                 <NavLink to={`/cake/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
               </div>
             ))}
@@ -98,7 +98,7 @@ const Product = ({ cake,cookie,croissant}) => {
               <div className="max-w-sm shadow-lg p-5 ">
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
-                <h1 className="font-bold">{item.price} บาท</h1>
+                <h1 className="font-bold text-xl">{item.price} บาท</h1>
                 <NavLink to={`/cookie/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
               </div>
             ))}
@@ -119,7 +119,7 @@ const Product = ({ cake,cookie,croissant}) => {
               <div className="max-w-sm shadow-lg p-5 ">
                 <img  className="w-72 rounded-full" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
-                <h1 className="font-bold">{item.price} บาท</h1>
+                <h1 className="font-bold text-xl">{item.price} บาท</h1>
                 <NavLink to={`/croissant/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
               </div>
             ))}
