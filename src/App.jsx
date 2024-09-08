@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import SignIn from "./pages/SignIn";
@@ -11,9 +11,18 @@ import CookieDetail from "./pages/Detail/CookieDetail";
 import CakeDetail from "./pages/Detail/CakeDetail";
 import CroissantDetail from "./pages/Detail/CroissantDetail";
 
+// Libraries
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 
 function App() {
+  useEffect(() => {
+    AOS.init();
+  })
+
   const [cake] = useState([
     {
       id: 1,
@@ -105,7 +114,7 @@ const [cookie] = useState([
     name: "ช็อคโกแลตชิป",
     score: 164,
     price: 39,
-    url: "https://famouscookies.com/wp-content/uploads/2020/11/Famous-Cookie-Cocolate-Chip-21-1600x1600-1.png",
+    url: "https://grainey.com/th/wp-content/uploads/2024/03/A_001-2.webp",
   },
 ]);
 

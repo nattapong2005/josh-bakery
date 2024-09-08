@@ -25,13 +25,12 @@
 }
 a {
   cursor: pointer;
-}
+} 
 body {
   background-color: white;
 }
 nav a.active {
-  border-radius: 30px;
   padding: 10px;
-  border: 1px solid #7D0A0A;
+  border-bottom: 1px solid #7D0A0A;
   color: black;
 }

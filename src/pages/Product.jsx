@@ -8,7 +8,7 @@ const Product = ({ cake,cookie,croissant}) => {
       {/* ========== Section-1 ========== */}
 
       <section className="container max-w-screen-xl mx-auto mt-20">
-        <div className="flex flex-col sm:flex-row md:flex-row justify-between items-center">
+        <div  className="flex flex-col sm:flex-row md:flex-row justify-between items-center">
           <div className="flex flex-col">
             <h1 className="text-red-800 text-2xl">แนะนำ</h1>
             <h1 className="text-4xl font-bold">สินค้าขายดี</h1>
@@ -37,7 +37,7 @@ const Product = ({ cake,cookie,croissant}) => {
           </div>
         </div>
 
-        <div className="flex flex-wrap gap-40 justify-center items-center text-center mt-20">
+        <div data-aos="zoom-in-down" data-aos-duration="1500"  className="flex flex-wrap gap-40 justify-center items-center text-center mt-20">
           <div className="max-w-sm w-72">
             <img
               src="https://cdn3d.iconscout.com/3d/premium/thumb/cake-3d-icon-download-in-png-blend-fbx-gltf-file-formats--delicious-logo-dessert-sweet-food-bakery-pack-icons-4923210.png?f=webp"
@@ -54,7 +54,7 @@ const Product = ({ cake,cookie,croissant}) => {
           </div>
           <div className="max-w-sm w-72">
             <img
-              src="https://cdn.discordapp.com/attachments/839434941652533248/1281118869200830535/image-removebg-preview.png?ex=66da8e6c&is=66d93cec&hm=155118bbd55fe2378ffda98cd2f93c384d78a77495a0203b4b1b4a179f8cefff&"
+              src="https://cdn-icons-png.freepik.com/512/8613/8613918.png"
               alt=""
             />
             <h1 className="text-2xl text-red-900 ">ครัวซองต์</h1>
@@ -66,7 +66,7 @@ const Product = ({ cake,cookie,croissant}) => {
 
       {/* ========== Section-2 ========== */}
 
-      <section className="container max-w-screen-xl  mx-auto mt-72">
+      <section data-aos="fade-up" data-aos-duration="1500"  className="container max-w-screen-xl  mx-auto mt-72">
         <div className="flex flex-col text-center sm:text-left">
           <h1 className="text-red-800 text-2xl">เลือกเมนู</h1>
           <h1 className="text-4xl font-bold mb-5">Cake เค้ก</h1>
@@ -86,7 +86,7 @@ const Product = ({ cake,cookie,croissant}) => {
         </div>
       </section>
 
-      <section className="container max-w-screen-xl  mx-auto mt-16">
+      <section data-aos="fade-up" data-aos-duration="1500"  className="container max-w-screen-xl  mx-auto mt-16">
         <div className="flex flex-col text-center sm:text-left">
           <h1 className="text-red-800 text-2xl">เลือกเมนู</h1>
           <h1 className="text-4xl font-bold mb-5">Cookie คุกกี้</h1>
@@ -107,7 +107,7 @@ const Product = ({ cake,cookie,croissant}) => {
       </section>
 
 
-      <section className="container max-w-screen-xl  mx-auto mt-16">
+      <section data-aos="fade-up" data-aos-duration="1500"  className="container max-w-screen-xl  mx-auto mt-16">
         <div className="flex flex-col text-center sm:text-left">
           <h1 className="text-red-800 text-2xl">เลือกเมนู</h1>
           <h1 className="text-4xl font-bold mb-5">Croissant ครัวซองต์</h1>

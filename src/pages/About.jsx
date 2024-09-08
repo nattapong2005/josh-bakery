@@ -10,9 +10,9 @@ const About = () => {
           <h1 className="text-xl">เกี่ยวกับเรา</h1>
           <h1 className="text-4xl font-bold">ABOUT US</h1>
         </div>
-        <div className="flex flex-wrap items-center justify-center">
-          <img className="" src="./img/baker/josh-about.png" alt="" />
-          <h1 className="text-sm  sm:text-lg sm:max-w-[71ch] ">
+        <div  className="flex flex-wrap items-center justify-center">
+          <img data-aos="fade-right" data-aos-duration="1500"  className="" src="./img/baker/josh-about.png" alt="" />
+          <h1 data-aos="fade-left" data-aos-duration="1500"  className="text-sm  sm:text-lg sm:max-w-[71ch] ">
             JOSH Bakery เป็นร้านเบเกอรี่ที่ได้รับความนิยมในกลุ่มนักชิม
             ด้วยขนมปังและเค้กที่ทำด้วยมือจากวัตถุดิบคุณภาพสูงทุกวัน
             ร้านมีเมนูหลากหลาย ตั้งแต่ขนมปังสดใหม่ เค้กสวยงาม ไปจนถึงขนมอบต่างๆ
@@ -31,7 +31,7 @@ const About = () => {
           <h1 className="text-xl">การทำงานของเรา</h1>
           <h1 className="text-4xl font-bold">OUR PROCESS</h1>
         </div>
-        <div className="flex flex-wrap justify-center gap-28 mt-10">
+        <div data-aos="fade-down" data-aos-duration="1500"  className="flex flex-wrap justify-center gap-28 mt-10">
           <div className="max-w-sm text-center ">
             <img src="./img/our_process/prepare.jpg" alt="" />
             <h1 className="text-xl">การทำขนม</h1>
