@@ -1,6 +1,7 @@
 import React from "react";
-import { Navigate, useParams } from "react-router-dom";
+import { Navigate, NavLink, useParams } from "react-router-dom";
 import Layout from "../../components/Layout";
+
 
 const CakeDetail = ({ cake }) => {
   const { id } = useParams();
@@ -18,11 +19,10 @@ const CakeDetail = ({ cake }) => {
             <img src={item.url} alt="" />
       </div>
         <div className="flex flex-col">
-          <h1 className="text-xl ">รายละเอียดสินค้า</h1>
-          <h1 className="text-4xl font-bold text-center sm:text-left">{item.name}</h1>
+          <h1 className="text-xl font-medium dark:text-green-600">รายละเอียดสินค้า</h1>
+          <h1 className="text-4xl font-bold">{item.name}</h1>
           <h1 className="text-sm sm:text-xl">
-            ประสบการณ์แห่งความสุขที่คุณสัมผัสได้ในทุกคำ <br />
-            เติมเต็มวันของคุณด้วยรหัสชาติหวานละมุนและความฟินที่ละลายในปาก
+            {item.description}
           </h1>
           <h1 className="">คะแนนรีวิว : <span className="font-bold">{item.score}</span></h1>
          <div className="flex w-10 gap-2">
@@ -39,8 +39,9 @@ const CakeDetail = ({ cake }) => {
             <h1 className="border-2 px-2 border-black hover:bg-black hover:text-white cursor-pointer">3</h1>
             <h1 className="border-2 px-2 border-black hover:bg-black hover:text-white cursor-pointer">4</h1>
          </div>
-         <h1 className="mt-3 text-xl">ราคา <span className="font-bold">{item.price}</span> บาท / ปอนด์</h1>
+         <h1 className="mt-3 text-2xl">ราคา <span className="font-bold">{item.price}</span> บาท / ปอนด์</h1>
          <button className="bg-primary p-2 w-52 rounded-lg mt-2 hover:bg-secondary">ยืนยันการสั่งซื้อ</button>
+         <NavLink className="text-center p-2 w-52 rounded-lg mt-2 " to="/product">ย้อนกลับ</NavLink>
         </div>
         </div>
       </section>

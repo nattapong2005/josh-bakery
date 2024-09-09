@@ -27,10 +27,8 @@ a {
   cursor: pointer;
 } 
 body {
-  background-color: white;
+  background-color: #f8fafc;
 }
 nav a.active {
-  padding: 10px;
-  border-bottom: 1px solid #7D0A0A;
-  color: black;
+  color: #7D0A0A;
 }

@@ -15,10 +15,10 @@ const Navbar = () => {
         </label>
         <nav className="peer-checked:block hidden  py-6 sm:block sm:py-0 ">
           <ul className="flex flex-col gap-y-3 sm:flex-row sm:gap-x-8 sm:items-center ">
-            <li><NavLink to="/" className="flex items-center gap-2 hover:text-red-800 text-gray-600" ><i className="fa-solid fa-house"></i> หน้าหลัก</NavLink></li>
-            <li><NavLink to="/product" className="flex items-center gap-2 hoverz  :text-red-800 text-gray-600" ><i className="fa-solid fa-cart-shopping"></i> สินค้า</NavLink></li>
-            <li><NavLink to="/about" className="flex items-center gap-2 hover:text-red-800 text-gray-600" ><i className="fa-solid fa-address-card"></i> เกี่ยวกับ</NavLink></li>
-            <li><NavLink to="/contact" className="flex items-center gap-2 hover:text-red-800 text-gray-600" ><i className="fa-solid fa-phone"></i> ติดต่อ</NavLink></li>
+            <li className='group relative w-max'><NavLink to="/" className="flex items-center gap-2  text-gray-600" ><i className="fa-solid fa-house"></i> หน้าหลัก </NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-800 group-hover:w-full"></span></li>
+            <li className='group relative w-max'><NavLink to="/product" className="flex items-center gap-2 hoverz  :text-red-800 text-gray-600" ><i className="fa-solid fa-cart-shopping"></i> สินค้า</NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-800 group-hover:w-full"></span></li>
+            <li className='group relative w-max'><NavLink to="/about" className="flex items-center gap-2  text-gray-600" ><i className="fa-solid fa-address-card"></i> เกี่ยวกับ</NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-800 group-hover:w-full"></span></li>
+            <li className='group relative w-max'><NavLink to="/contact" className="flex items-center gap-2  text-gray-600" ><i className="fa-solid fa-phone"></i> ติดต่อ</NavLink><span className="absolute -bottom-1 left-0 w-0 transition-all h-0.5 bg-red-800 group-hover:w-full"></span></li>
             <li className="mt-2 sm:mt-0"><NavLink to="/signin" className="flex items-center gap-2 rounded-full bg-secondary text-white px-4 py-2 " ><i className="fa-solid fa-right-to-bracket"></i> Sign In</NavLink></li>
           </ul>
         </nav>

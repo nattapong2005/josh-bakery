@@ -3,12 +3,23 @@ import Layout from "../components/Layout";
 import toast from "react-hot-toast";
 import CountUp from "react-countup";
 
-
 const Home = () => {
+  function Operation() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        reject("failed");
+      }, 2000);
+    });
+  }
 
-  const error = (text) => {
-    toast.error(text);
-  };
+  function error(text) {
+    toast.promise(Operation(), {
+      loading: "กำลังดำเนินการ...",
+      error: <b>{text}</b>,
+      success: null,
+    });
+  }
+
   return (
     <Layout>
       {/* ========== Section-1 ========== */}
@@ -37,7 +48,7 @@ const Home = () => {
             ข้อมูลเพิ่มเติม
           </a>
         </div>
-        
+
         <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3">
           <img
             src="https://static.vecteezy.com/system/resources/previews/045/931/711/non_2x/strawberry-cake-3d-item-free-png.png"
@@ -90,7 +101,7 @@ const Home = () => {
 
       <section
         id="recommend"
-        className="w-full  py-14 container mx-auto  mt-28 mb-52 shadow-2xl border-b-8 border-red-900"
+        className="w-full  py-14 container mx-auto  mt-28 mb-52 shadow-xl border-b-8 border-red-900"
       >
         <h1 className="text-center mb-10 text-5xl font-bold">สินค้าแนะนำ</h1>
         <div
@@ -108,8 +119,9 @@ const Home = () => {
               เค้กนมสดไขมันต่ำรสวนิลา สอดไส้สตรอเบอรี่ <br />{" "}
               และตกแต่งด้วยสตรอเบอรี่สด
             </h1>
+            <h1 className="text-2xl font-bold text-red-700">129 บาท / ปอนด์</h1>
             <button
-              onClick={() => error("ขณะนี้สินค้าหมด!")}
+              onClick={() => error("ขอภัย.. ขณะนี้สินค้าหมด!")}
               className="flex gap-2 w-36 mt-2 items-center border border-red-600 py-2 px-3 rounded-full text-red-600  hover:bg-secondary hover:text-white hover:font-bold"
             >
               <i className="fa-solid fa-basket-shopping text-lg"></i>
@@ -160,18 +172,18 @@ const Home = () => {
 
       {/* ========== Section-5 ========== */}
 
-      <section className="w-full py-28 mt-28 mb-36 bg-slate-50 flex flex-col items-center shadow">
+      <section className="w-full py-28 mt-28 mb-36 flex flex-col items-center ">
         <h1 className="text-center mb-20 text-4xl font-bold">
           รายละเอียดเพิ่มเติม
         </h1>
         <div
           data-aos="zoom-in-up"
           data-aos-duration="1500"
-          className="flex gap-10 flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-8"
+          className="flex gap-10 flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-48"
         >
           {/* Menu Section */}
           <div className="flex flex-col items-center">
-            <div className="bg-white p-6 rounded-full shadow-lg">
+            <div className="bg-white p-6 rounded-full shadow-md">
               <i className="fa-solid fa-cake-candles text-5xl"></i>
             </div>
             <p className="text-3xl font-bold text-black  mt-4">
@@ -183,7 +195,7 @@ const Home = () => {
 
           {/* Years of Experience Section */}
           <div className="flex flex-col items-center">
-            <div className="bg-white p-6 rounded-full shadow-lg">
+            <div className="bg-white p-6 rounded-full shadow-md">
               <i className="fa-solid fa-shield text-5xl"></i>
             </div>
             <p className="text-3xl font-bold text-black  mt-4">
@@ -195,7 +207,7 @@ const Home = () => {
 
           {/* Baker Section */}
           <div className="flex flex-col items-center">
-            <div className="bg-white p-6 rounded-full shadow-lg">
+            <div className="bg-white p-6 rounded-full shadow-md">
               <i className="fa-solid fa-bread-slice text-5xl"></i>
             </div>
             <p className="text-3xl font-bold text-black  mt-4">
@@ -207,11 +219,6 @@ const Home = () => {
       </section>
 
       {/* ================================ */}
-
-
-
-    
-
     </Layout>
   );
 };

@@ -5,64 +5,58 @@ const Contact = () => {
   return (
     <Layout>
       {/* Section 1 */}
-      <section className="container mx-auto mt-36">
-        <h1 className="text-4xl font-bold text-center mb-10">
-          ส่งข้อความหาเรา
-        </h1>
-        <form class="max-w-screen-sm mx-auto shadow-xl w-full h-full p-5 bg-primary rounded-md ">
-            <div class="mb-5">
-                <input type="text" className="bg-white border  text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-2 focus:ring-white  " placeholder="กรอกชื่อ" required />
+      <section data-aos="fade-up" data-aos-duration="2000" className="container mx-auto mt-32">
+        <div className="flex flex-col justify-center text-center mb-5">
+          <h1 className="text-xl">เกี่ยวกับเรา</h1>
+          <h1 className="text-4xl font-bold">CONTACT US</h1>
+        </div>
+
+        <div className="flex justify-center items-center max-w-screen-md mx-auto mb-5">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-2">
+            <div style={{ transition: 'transform 0.4s ease' }} className="flex flex-col items-center shadow-md border-t-4 border-red-600 p-5 gap-y-5 bg-white hover:scale-105 transition-transform cursor-pointer">
+              <i class="fa-solid fa-phone text-5xl mt-2 text-red-800"></i>
+              <h1 className="text-xl">024564788</h1>
             </div>
-            <div class="mb-5">
-                <input type="text" className="bg-white border  text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-2 focus:ring-white" placeholder="กรอกเบอร์โทร" required />
+            <div style={{ transition: 'transform 0.4s ease' }} className="flex flex-col items-center shadow-md border-t-4 border-blue-600 p-5 gap-y-5 bg-white hover:scale-105 transition-transform cursor-pointer">
+            <i class="fa-solid fa-location-dot text-5xl mt-2 text-red-800"></i>
+              <h1 className="text-xl">123 Example dot dot</h1>
             </div>
-            <div class="mb-5">
-                {/* <input type="text" className="bg-white border h-52  text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none focus:ring-2 focus:ring-white" placeholder="ข้อความ ..." required /> */}
-                <textarea class="w-full h-44 px-3 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-red-600 text-black" placeholder="ข้อความ ..."></textarea>
+            <div style={{ transition: 'transform 0.4s ease' }} className="flex flex-col items-center shadow-md border-t-4 border-lime-600 p-5 gap-y-5 bg-white hover:scale-105 transition-transform cursor-pointer">
+            <i class="fa-solid fa-envelope text-5xl mt-2 text-red-800"></i>
+              <h1 className="text-xl">joshbakery@hotmail.com</h1>
             </div>
-            <button type="submit" className="bg-secondary rounded-xl w-full p-2">ส่งข้อมูล</button>
+          </div>
+        </div>
+
+        <form class="max-w-screen-md mx-auto shadow-xl w-full h-full p-10  rounded-md bg-white">
+          <div class="mb-5">
+            <input
+              type="text"
+              className="bg-white border  text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow-md focus:ring-2 focus:ring-white  "
+              placeholder="กรอกชื่อ"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            <input
+              type="text"
+              className="bg-white border  text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow-md focus:ring-2 focus:ring-white"
+              placeholder="กรอกเบอร์โทร"
+              required
+            />
+          </div>
+          <div class="mb-5">
+            {/* <input type="text" className="bg-white border h-52  text-gray-900 text-sm rounded-lg block w-full p-2.5 focus:outline-none shadow-md focus:ring-2 focus:ring-white" placeholder="ข้อความ ..." required /> */}
+            <textarea
+              class="w-full h-44 px-3 py-2 rounded-md focus:outline-none shadow-md focus:ring-2 focus:ring-red-600 text-black"
+              placeholder="ข้อความ ..."
+            ></textarea>
+          </div>
+          <button type="submit" className="bg-secondary rounded-xl w-full p-2">
+            ส่งข้อมูล
+          </button>
         </form>
       </section>
-
-      {/* ==================== */}
-
-
-      {/* Section 2 */}
-      <section className="container mx-auto mt-52 max-w-3xl">
-        <div className="flex flex-col items-center justify-center">
-            <h1 className="font-bold text-4xl mb-6">ติดต่อเรา</h1>
-            <h1 className="text-xl">เรายินดีรับฟังความคิดเห็นและข้อเสนอแนะจากท่าน หากท่านมีคำถาม หรือข้อสงสัยใด ๆ <br />โปรดอย่าลังเลที่จะติดต่อเรา เราพร้อมที่จะช่วยเหลือท่านเสมอ</h1>
-        </div>
-
-
-      <div className="flex flex-col md:flex-row justify-around items-center bg-gray-200 p-4 rounded-lg shadow-lg space-y-4 md:space-y-0 mt-10 mb-20">
-      {/* Phone Section */}
-      <div className="flex items-center space-x-2">
-        <div className="bg-red-800 p-2 rounded-full">
-        <svg className="text-white h-11 w-11" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/><path d="M14.05 2a9 9 0 0 1 8 7.94"/><path d="M14.05 6A5 5 0 0 1 18 10"/></svg>
-        </div>
-        <span className="text-black">0234522094</span>
-      </div>
-
-      {/* Facebook Section */}
-      <div className="flex items-center space-x-2">
-        <div className="bg-red-800 p-2 rounded-full">
-        <svg className="text-white h-11 w-11" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-        </div>
-        <span className="text-black">JOSH Bakery</span>
-      </div>
-
-      {/* YouTube Section */}
-      <div className="flex items-center space-x-2">
-        <div className="bg-red-800 p-2 rounded-full">
-        <svg className="text-white h-11 w-11" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="m10 15 5-3-5-3z"/></svg>
-        </div>
-        <span className="text-black">JOSH Bakery</span>
-      </div>
-    </div>
-      </section>
-      
-      {/* ==================== */}
     </Layout>
   );
 };
