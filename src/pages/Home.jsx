@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import toast from "react-hot-toast";
 import CountUp from "react-countup";
 import { NavLink } from "react-router-dom";
+import Review from "../Review";
 
 const Home = () => {
 
@@ -104,7 +105,7 @@ const Home = () => {
         id="recommend"
         className="w-full  py-14 container mx-auto  mt-28 mb-52 "
       >
-        <h1 className="text-center mb-10 text-5xl font-bold">สินค้าแนะนำ</h1>
+        <h1 className="text-center mb-10 text-4xl font-bold">สินค้าแนะนำ</h1>
         <div
           data-aos="zoom-in"
           data-aos-duration="1500"
@@ -169,6 +170,14 @@ const Home = () => {
       </section>
 
       {/* ================================ */}
+
+
+      {/* Customer Review */}
+      <Review/>
+
+
+
+
 
       {/* ========== Section-5 ========== */}
 

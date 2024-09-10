@@ -47,7 +47,7 @@ function App() {
         name: "เค้กนมสดวนิลาแบบที่ 03",
         score: 198,
         price: 240,
-        url: "https://kingbakeryhouse.com/upload-img/vanilla-2.gif",
+        url: "https://kingbakeryhouse.com/upload-img/duck.gif",
         description: "มีรสชาติวนิลลาที่เข้มข้น พร้อมครีมนมสดที่อร่อยและเย้ายวนใจ"
     },
     {

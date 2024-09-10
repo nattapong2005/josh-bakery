@@ -14,7 +14,7 @@ const CakeDetail = ({ cake }) => {
 
   return (
     <Layout>
-      <section className="container mx-auto mt-24">
+      <section className="container mx-auto mt-24 mb-72">
         <div className="flex flex-wrap justify-evenly items-center">
         <div className="img">
             <img src={item.url} alt="" />

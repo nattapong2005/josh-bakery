@@ -52,7 +52,7 @@ const About = () => {
       {/* ======================*/}
 
       {/* Section 2 */}
-      <section className="container mx-auto mb-10">
+      <section className="container mx-auto mb-20">
         <div className="flex flex-col mt-32 text-center sm:text-left">
           <h1 className="text-xl">การทำงานของเรา</h1>
           <h1 className="text-4xl font-bold">OUR PROCESS</h1>
