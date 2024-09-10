@@ -3,11 +3,12 @@ import Layout from "../components/Layout";
 import { NavLink } from "react-router-dom";
 
 const Product = ({ cake,cookie,croissant}) => {
+
   return (
     <Layout>
       {/* ========== Section-1 ========== */}
 
-      <section className="container max-w-screen-xl mx-auto mt-20">
+      <section className="container max-w-screen-xl mx-auto mt-28">
         <div  className="flex flex-col sm:flex-row md:flex-row justify-between items-center">
           <div className="flex flex-col">
             <h1 className="text-red-800 text-2xl">แนะนำ</h1>
@@ -23,7 +24,7 @@ const Product = ({ cake,cookie,croissant}) => {
           </div>
         </div>
 
-        <div data-aos="zoom-in-down" data-aos-duration="1500"  className="flex flex-wrap gap-40 justify-center items-center text-center mt-20">
+        <div data-aos="zoom-in-down" data-aos-duration="1500"  className="flex flex-wrap gap-40 justify-center items-center text-center mt-36">
           <div className="max-w-sm w-72">
             <img
               src="https://cdn3d.iconscout.com/3d/premium/thumb/cake-3d-icon-download-in-png-blend-fbx-gltf-file-formats--delicious-logo-dessert-sweet-food-bakery-pack-icons-4923210.png?f=webp"
@@ -52,6 +53,8 @@ const Product = ({ cake,cookie,croissant}) => {
 
       {/* ========== Section-2 ========== */}
 
+      {/* ========== Cake ========== */}
+
       <section data-aos="fade-up" data-aos-duration="1500"  className="container max-w-screen-xl  mx-auto mt-72">
         <div className="flex flex-col text-center sm:text-left">
           <h1 className="text-red-800 text-2xl">เลือกเมนู</h1>
@@ -59,18 +62,23 @@ const Product = ({ cake,cookie,croissant}) => {
           <hr />
         </div>
         <div className="flex justify-center items-center mt-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-36 gap-y-7">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-x-10 gap-y-7">
             {cake.map((item) => (
-              <div className="max-w-sm shadow-lg p-5 ">
+              <div className="max-w-xl shadow-lg bg-white p-5 rounded-lg">
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
-                <h1 className="font-bold text-xl">{item.price} บาท</h1>
-                <NavLink to={`/cake/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
+                <div className="flex justify-between items-center">
+                  <h1 className="font-bold text-2xl">฿{item.price} </h1>
+                  <NavLink to={`/cake/${item.id}`} className="bg-primary rounded-md text-center py-1.5 px-2"><i class="fa-solid fa-cart-shopping"></i> สั่งซื้อ</NavLink>
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
+
+
+      {/* ========== Cookie ========== */}
 
       <section data-aos="fade-up" data-aos-duration="1500"  className="container max-w-screen-xl  mx-auto mt-16">
         <div className="flex flex-col text-center sm:text-left">
@@ -79,13 +87,15 @@ const Product = ({ cake,cookie,croissant}) => {
           <hr />
         </div>
         <div className="flex justify-center items-center mt-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-36 gap-y-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-x-10 gap-y-7">
             {cookie.map((item) => (
-              <div className="max-w-sm shadow-lg p-5 ">
+              <div className="max-w-xl shadow-lg bg-white p-5 rounded-lg">
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
-                <h1 className="font-bold text-xl">{item.price} บาท</h1>
-                <NavLink to={`/cookie/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
+                <div className="flex justify-between items-center">
+                  <h1 className="font-bold text-2xl">฿{item.price} </h1>
+                  <NavLink to={`/cookie/${item.id}`} className="bg-primary rounded-md text-center py-1.5 px-2"><i class="fa-solid fa-cart-shopping"></i> สั่งซื้อ</NavLink>
+                </div>
               </div>
             ))}
           </div>
@@ -93,20 +103,24 @@ const Product = ({ cake,cookie,croissant}) => {
       </section>
 
 
-      <section data-aos="fade-up" data-aos-duration="1500"  className="container max-w-screen-xl  mx-auto mt-16">
+{/* ========== Croissant ========== */}
+
+      <section data-aos="fade-up" data-aos-duration="1500"  className="container max-w-screen-xl  mx-auto mt-16 mb-20">
         <div className="flex flex-col text-center sm:text-left">
           <h1 className="text-red-800 text-2xl">เลือกเมนู</h1>
           <h1 className="text-4xl font-bold mb-5">Croissant ครัวซองต์</h1>
           <hr />
         </div>
         <div className="flex justify-center items-center mt-5">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-x-36 gap-y-7">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-x-10 gap-y-7">
             {croissant.map((item) => (
-              <div className="max-w-sm shadow-lg p-5 ">
-                <img  className="w-72 rounded-full" src={item.url} alt="" />
-                <h1 className="text-xl">{item.name}</h1>
-                <h1 className="font-bold text-xl">{item.price} บาท</h1>
-                <NavLink to={`/croissant/${item.id}`} className="bg-primary w-full block py-2 text-center mt-2 rounded-lg hover:bg-secondary">สั่งซื้อ</NavLink>
+              <div className="max-w-xl shadow-lg bg-white p-5 rounded-lg">
+                <img className="w-72 rounded-full" src={item.url} alt="" />
+                <h1 className="text-xl mt-2">{item.name}</h1>
+                <div className="flex justify-between items-center">
+                  <h1 className="font-bold text-2xl">฿{item.price} </h1>
+                  <NavLink to={`/croissant/${item.id}`} className="bg-primary rounded-md text-center py-1.5 px-2"><i class="fa-solid fa-cart-shopping"></i> สั่งซื้อ</NavLink>
+                </div>
               </div>
             ))}
           </div>

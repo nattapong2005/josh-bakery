@@ -11,6 +11,7 @@ const CakeDetail = ({ cake }) => {
     return <Navigate to="*" />;
   }
 
+
   return (
     <Layout>
       <section className="container mx-auto mt-24">
@@ -40,7 +41,7 @@ const CakeDetail = ({ cake }) => {
             <h1 className="border-2 px-2 border-black hover:bg-black hover:text-white cursor-pointer">4</h1>
          </div>
          <h1 className="mt-3 text-2xl">ราคา <span className="font-bold">{item.price}</span> บาท / ปอนด์</h1>
-         <button className="bg-primary p-2 w-52 rounded-lg mt-2 hover:bg-secondary">ยืนยันการสั่งซื้อ</button>
+         <button className="bg-primary p-2 w-52 rounded-lg mt-2 hover:bg-secondary hover:shadow-2xl">ยืนยันการสั่งซื้อ</button>
          <NavLink className="text-center p-2 w-52 rounded-lg mt-2 " to="/product">ย้อนกลับ</NavLink>
         </div>
         </div>

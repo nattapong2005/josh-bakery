@@ -31,14 +31,14 @@ function App() {
         name: "เค้กนมสดวนิลาแบบที่ 01",
         score: 254,
         price: 200,
-        url: "https://kingbakeryhouse.com/upload-img/vanilla-macaron.gif",
+        url: "https://kingbakeryhouse.com/upload-img/round.gif",
         description: "มีเนื้อเค้กนุ่มละมุนรสวานิลลา พร้อมด้วยครีมนมสดที่หวานหอม"
     },
     {
         id: 2,
         name: "เค้กนมสดวนิลาแบบที่ 02",
         score: 176,
-        price: 200,
+        price: 220,
         url: "https://kingbakeryhouse.com/upload-img/vanilla-1.gif",
         description: "มีความหวานนุ่ม พร้อมกับรสชาติของวนิลลาที่ลงตัว"
     },
@@ -46,7 +46,7 @@ function App() {
         id: 3,
         name: "เค้กนมสดวนิลาแบบที่ 03",
         score: 198,
-        price: 200,
+        price: 240,
         url: "https://kingbakeryhouse.com/upload-img/vanilla-2.gif",
         description: "มีรสชาติวนิลลาที่เข้มข้น พร้อมครีมนมสดที่อร่อยและเย้ายวนใจ"
     },

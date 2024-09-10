@@ -13,16 +13,16 @@ const Contact = () => {
 
         <div className="flex justify-center items-center max-w-screen-md mx-auto mb-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-2">
-            <div style={{ transition: 'transform 0.4s ease' }} className="flex flex-col items-center shadow-md border-t-4 border-red-600 p-5 gap-y-5 bg-white hover:scale-105 transition-transform cursor-pointer">
-              <i class="fa-solid fa-phone text-5xl mt-2 text-red-800"></i>
+            <div style={{ transition: 'transform 0.4s ease' }} className="flex flex-col items-center shadow-md border-t-4 border-amber-600 p-5 gap-y-5 bg-white hover:scale-105 transition-transform cursor-pointer">
+              <i class="fa-solid fa-phone text-3xl mt-2 text-red-800"></i>
               <h1 className="text-xl">024564788</h1>
             </div>
             <div style={{ transition: 'transform 0.4s ease' }} className="flex flex-col items-center shadow-md border-t-4 border-blue-600 p-5 gap-y-5 bg-white hover:scale-105 transition-transform cursor-pointer">
-            <i class="fa-solid fa-location-dot text-5xl mt-2 text-red-800"></i>
+            <i class="fa-solid fa-location-dot text-3xl mt-2 text-red-800"></i>
               <h1 className="text-xl">123 Example dot dot</h1>
             </div>
             <div style={{ transition: 'transform 0.4s ease' }} className="flex flex-col items-center shadow-md border-t-4 border-lime-600 p-5 gap-y-5 bg-white hover:scale-105 transition-transform cursor-pointer">
-            <i class="fa-solid fa-envelope text-5xl mt-2 text-red-800"></i>
+            <i class="fa-solid fa-envelope text-3xl mt-2 text-red-800"></i>
               <h1 className="text-xl">joshbakery@hotmail.com</h1>
             </div>
           </div>
@@ -52,7 +52,7 @@ const Contact = () => {
               placeholder="ข้อความ ..."
             ></textarea>
           </div>
-          <button type="submit" className="bg-secondary rounded-xl w-full p-2">
+          <button type="submit" className="bg-secondary w-full p-2">
             ส่งข้อมูล
           </button>
         </form>

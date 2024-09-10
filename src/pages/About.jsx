@@ -20,7 +20,7 @@ const About = () => {
               <img class="relative" src="./img/baker/josh-about.png" alt="" />
             </div>
             <div class="absolute left-0 pr-12 bottom-8 xl:bottom-20">
-              <div class="max-w-xs bg-slate-400 rounded-lg sm:max-w-md xl:max-w-md">
+              <div class="max-w-xs bg-slate-400 rounded-full sm:max-w-md xl:max-w-md">
                 <div class="px-3 py-4 sm:px-5 sm:py-8">
                   <div class="flex items-start">
                     <blockquote class="ml-5">
@@ -62,7 +62,7 @@ const About = () => {
           data-aos-duration="1500"
           className="flex flex-wrap justify-center gap-28 mt-10"
         >
-          <div className="max-w-sm text-center ">
+          <div className="max-w-sm text-center">
             <img src="./img/our_process/prepare.jpg" alt="" />
             <h1 className="text-xl">การทำขนม</h1>
           </div>

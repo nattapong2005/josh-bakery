@@ -2,8 +2,10 @@ import React, { useEffect } from "react";
 import Layout from "../components/Layout";
 import toast from "react-hot-toast";
 import CountUp from "react-countup";
+import { NavLink } from "react-router-dom";
 
 const Home = () => {
+
   function Operation() {
     return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -11,7 +13,6 @@ const Home = () => {
       }, 2000);
     });
   }
-
   function error(text) {
     toast.promise(Operation(), {
       loading: "กำลังดำเนินการ...",
@@ -40,13 +41,13 @@ const Home = () => {
             ขนมอบแสนอร่อย ที่สร้างสรรค์จากใจ เต็มไปด้วย <br />{" "}
             ความรักและความใส่ใจทุุกรายละเอียด
           </p>
-          <a
-            href="#recommend"
-            className="mt-2 w-40 flex items-center gap-2 border border-red-600 text-red-600 rounded-full py-2 px-4 hover:bg-secondary hover:text-white hover:font-bold "
+          <NavLink
+            to="/product"
+            className="mt-2 w-fit flex items-center gap-2 border border-red-600 text-red-600 rounded-full py-2 px-4 hover:bg-secondary hover:text-white hover:font-bold "
           >
-            <i className="fa-solid fa-comment-dots text-lg"></i>
-            ข้อมูลเพิ่มเติม
-          </a>
+            <i class="fa-solid fa-cart-shopping"></i>
+            สั่งซื้อตอนนี้
+          </NavLink>
         </div>
 
         <div className="w-full sm:w-1/3 md:w-1/3 lg:w-1/3">
@@ -101,7 +102,7 @@ const Home = () => {
 
       <section
         id="recommend"
-        className="w-full  py-14 container mx-auto  mt-28 mb-52 shadow-xl border-b-8 border-red-900"
+        className="w-full  py-14 container mx-auto  mt-28 mb-52 "
       >
         <h1 className="text-center mb-10 text-5xl font-bold">สินค้าแนะนำ</h1>
         <div
@@ -110,9 +111,8 @@ const Home = () => {
           className="flex flex-wrap justify-evenly items-center"
         >
           <img
-            className="mb-5 "
+            className="mb-5 w-2/4"
             src="https://png.pngtree.com/png-vector/20240813/ourmid/pngtree-flower-shaped-fresh-strawberry-vanilla-short-cake-png-image_13464202.png"
-            alt=""
           />
           <div className="flex flex-col">
             <h1 className="text-lg sm:text-2xl md:text-2xl lg:text-2xl">
@@ -124,8 +124,8 @@ const Home = () => {
               onClick={() => error("ขอภัย.. ขณะนี้สินค้าหมด!")}
               className="flex gap-2 w-36 mt-2 items-center border border-red-600 py-2 px-3 rounded-full text-red-600  hover:bg-secondary hover:text-white hover:font-bold"
             >
-              <i className="fa-solid fa-basket-shopping text-lg"></i>
-              สั่งซื้อตอนนี้
+              <i class="fa-solid fa-cart-shopping"></i>
+              พรีออเดอร์
             </button>
           </div>
         </div>
