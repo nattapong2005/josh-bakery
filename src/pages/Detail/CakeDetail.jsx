@@ -1,6 +1,8 @@
 import React from "react";
 import { Navigate, NavLink, useParams } from "react-router-dom";
 import Layout from "../../components/Layout";
+import toast from "react-hot-toast";
+
 
 
 const CakeDetail = ({ cake }) => {
@@ -9,6 +11,25 @@ const CakeDetail = ({ cake }) => {
 
   if (!item) {
     return <Navigate to="*" />;
+  }
+
+  function Operation() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => {
+        resolve("success"); 
+      }, 2000);
+    });
+  }
+  
+  function success(text) {
+    toast.promise(
+      Operation(),
+      {
+        loading: "กำลังดำเนินการ...",
+        success: <b>{text}</b>, 
+        error: null,
+      }
+    );
   }
 
 
@@ -41,7 +62,7 @@ const CakeDetail = ({ cake }) => {
             <h1 className="border-2 px-2 border-black hover:bg-black hover:text-white cursor-pointer">4</h1>
          </div>
          <h1 className="mt-3 text-2xl">ราคา <span className="font-bold">{item.price}</span> บาท / ปอนด์</h1>
-         <button className="bg-primary p-2 w-52 rounded-lg mt-2 hover:bg-secondary hover:shadow-2xl">ยืนยันการสั่งซื้อ</button>
+         <button className="bg-primary p-2 w-52 rounded-lg mt-2 hover:bg-secondary hover:shadow-2xl" onClick={() => success('สั่งซื้อสำเร็จ!')}>ยืนยันการสั่งซื้อ</button>
          <NavLink className="text-center p-2 w-52 rounded-lg mt-2 " to="/product">ย้อนกลับ</NavLink>
         </div>
         </div>

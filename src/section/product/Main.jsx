@@ -28,14 +28,14 @@ const Main = () => {
             src="https://cdn3d.iconscout.com/3d/premium/thumb/cake-3d-icon-download-in-png-blend-fbx-gltf-file-formats--delicious-logo-dessert-sweet-food-bakery-pack-icons-4923210.png?f=webp"
             alt=""
           />
-          <h1 className="text-2xl text-red-900 ">เค้กช็อคโกแลต</h1>
+          <h1 className="text-2xl text-red-900 ">เค้ก</h1>
         </div>
         <div className="max-w-sm w-72">
           <img
             src="https://static.vecteezy.com/system/resources/thumbnails/013/453/720/small_2x/cookies-3d-rendering-isometric-icon-png.png"
             alt=""
           />
-          <h1 className="text-2xl text-red-900 ">คุกกี้ช็อคโกแลต</h1>
+          <h1 className="text-2xl text-red-900 ">คุกกี้</h1>
         </div>
         <div className="max-w-sm w-72">
           <img

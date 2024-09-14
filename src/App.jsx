@@ -10,6 +10,7 @@ import NotFound from "./pages/NotFound";
 import CookieDetail from "./pages/Detail/CookieDetail";
 import CakeDetail from "./pages/Detail/CakeDetail";
 import CroissantDetail from "./pages/Detail/CroissantDetail";
+import FixedTop from './FixedTop';
 
 // Libraries
 import AOS from 'aos';
@@ -76,6 +77,7 @@ function App() {
     }
 ];
 
+// ข้อมูลคุกกี้
 const cookie = [
     {
         id: 1,
@@ -126,7 +128,7 @@ const cookie = [
         description: "คุกกี้ช็อคโกแลตชิปเป็นคุกกี้ที่มีช็อคโกแลตชิปกระจายอยู่ทั่วทั้งชิ้น"
     }
 ];
-
+// ข้อมูลครัวซองต์
 const croissant = [
     {
         id: 1,
@@ -159,6 +161,7 @@ const croissant = [
   return (
     <>
       <Router>
+        <FixedTop/>
         <Routes>
           <Route path="/" element={<Home/>}  />
           <Route path="/product" element={<Product cake={cake} cookie={cookie} croissant={croissant} />} />

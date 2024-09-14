@@ -17,7 +17,7 @@ const AllProduct = ({cake, cookie, croissant}) => {
         <div className="flex justify-center items-center mt-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-x-10 gap-y-7">
             {cake.map((item,index) => (
-              <div className="max-w-xl shadow-lg bg-white p-5 rounded-lg" key={index}>
+              <div className="max-w-xl shadow-md transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400 bg-white p-5 rounded-lg" key={index}>
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
                 <div className="flex justify-between items-center">
@@ -47,7 +47,7 @@ const AllProduct = ({cake, cookie, croissant}) => {
         <div className="flex justify-center items-center mt-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-x-10 gap-y-7">
             {cookie.map((item,index) => (
-              <div className="max-w-xl shadow-lg bg-white p-5 rounded-lg" key={index}>
+              <div className="max-w-xl shadow-md transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400 bg-white p-5 rounded-lg" key={index}>
                 <img className="w-72" src={item.url} alt="" />
                 <h1 className="text-xl">{item.name}</h1>
                 <div className="flex justify-between items-center">
@@ -77,7 +77,7 @@ const AllProduct = ({cake, cookie, croissant}) => {
         <div className="flex justify-center items-center mt-5">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-full gap-x-10 gap-y-7">
             {croissant.map((item,index) => (
-              <div className="max-w-xl shadow-lg bg-white p-5 rounded-lg" key={index}>
+              <div className="max-w-xl shadow-md transition-shadow duration-300 hover:shadow-lg hover:shadow-gray-400 bg-white p-5 rounded-lg" key={index}>
                 <img className="w-72 rounded-full" src={item.url} alt="" />
                 <h1 className="text-xl mt-2">{item.name}</h1>
                 <div className="flex justify-between items-center">
